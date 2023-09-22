@@ -4,7 +4,7 @@
     <!-- "app_name" is now defined in build.gradle -->
 
     <!-- server urls -->
-    <string name="matrix_org_server_url" translatable="false">https://matrix.org</string>
+    <string name="matrix_org_server_url" translatable="false">https://dev.harko.app</string>
 
     <!-- Rageshake configuration -->
     <string name="bug_report_url" translatable="false">https://riot.im/bugreports/submit</string>
@@ -26,7 +26,7 @@
     <string name="pusher_app_id" translatable="false">im.vector.app.android</string>
 
     <!-- preferred jitsi domain -->
-    <string name="preferred_jitsi_domain" translatable="false">meet.element.io</string>
+    <string name="preferred_jitsi_domain" translatable="false">meet.harko.app</string>
 
     <string-array name="room_directory_servers" translatable="false">
         <item>matrix.org</item>

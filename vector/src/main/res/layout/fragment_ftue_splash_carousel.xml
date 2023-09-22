@@ -67,20 +67,22 @@
         app:layout_constraintEnd_toEndOf="@id/splashCarouselGutterEnd"
         app:layout_constraintStart_toStartOf="@id/splashCarouselGutterStart"
         app:layout_constraintTop_toBottomOf="@id/loginSplashButtonsSpace"
-        tools:text="@string/login_splash_create_account" />
+        tools:text="@string/login_splash_create_account"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/loginSplashAlreadyHaveAccount"
-        style="@style/Widget.Vector.Button.Text.Login"
+        style="@style/Widget.Vector.Button.Login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/login_splash_already_have_account"
         android:textAllCaps="true"
         android:transitionName="loginSubmitTransition"
-        app:layout_constraintBottom_toTopOf="@id/loginSplashBottomSpace"
+        app:layout_constraintBottom_toTopOf="@id/loginSplashAlreadyHaveAccount"
         app:layout_constraintEnd_toEndOf="@id/splashCarouselGutterEnd"
         app:layout_constraintStart_toStartOf="@id/splashCarouselGutterStart"
-        app:layout_constraintTop_toBottomOf="@id/loginSplashSubmit" />
+        app:layout_constraintTop_toBottomOf="@id/loginSplashButtonsSpace"
+        tools:text="@string/login_splash_create_account"/>
 
     <Space
         android:id="@+id/loginSplashBottomSpace"

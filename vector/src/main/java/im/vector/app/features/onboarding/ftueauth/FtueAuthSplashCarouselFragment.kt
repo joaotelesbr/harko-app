@@ -49,6 +49,7 @@ private const val CAROUSEL_TRANSITION_TIME_MS = 500L
 class FtueAuthSplashCarouselFragment :
         AbstractFtueAuthFragment<FragmentFtueSplashCarouselBinding>() {
 
+
     @Inject lateinit var vectorPreferences: VectorPreferences
     @Inject lateinit var vectorFeatures: VectorFeatures
     @Inject lateinit var carouselController: SplashCarouselController
@@ -82,10 +83,10 @@ class FtueAuthSplashCarouselFragment :
         carouselController.setData(carouselStateFactory.create())
 
         val isAlreadyHaveAccountEnabled = vectorFeatures.isOnboardingAlreadyHaveAccountSplashEnabled()
-        views.loginSplashSubmit.apply {
-            setText(if (isAlreadyHaveAccountEnabled) R.string.login_splash_create_account else R.string.login_splash_submit)
-            debouncedClicks { splashSubmit(isAlreadyHaveAccountEnabled) }
-        }
+//        views.loginSplashSubmit.apply {
+//            setText(if (isAlreadyHaveAccountEnabled) R.string.login_splash_create_account else R.string.login_splash_submit)
+//            debouncedClicks { splashSubmit(isAlreadyHaveAccountEnabled) }
+//        }
         views.loginSplashAlreadyHaveAccount.apply {
             isVisible = isAlreadyHaveAccountEnabled
             debouncedClicks { alreadyHaveAnAccount() }
